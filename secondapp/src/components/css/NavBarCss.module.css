@@ -5,6 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar .logo {
@@ -29,6 +32,15 @@
   line-height: 72px;
 }
 
+.navbar button {
+  color: #1e2132;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 10px;
+  line-height: 72px;
+}
+
 .navbar .active {
   color: #1464f4;
 }
@@ -37,7 +49,7 @@
 }
 
 .navbar a:hover span {
-  background: #F2F4F5;
+  background: #f2f4f5;
 }
 
 .navbar span {
@@ -49,8 +61,14 @@
   background: rgb(244, 20, 225);
 }
 
-.navbar .login-button span{
+.navbar .login-button span {
+  color: #1e2132;
+}
+
+.navbar .login-button:hover span {
   color: #1464f4;
+  background: none;
+  transition: color 0.3s;
 }
 
 .navbar .register-button span {
@@ -58,12 +76,12 @@
   background: #1464f4;
   border: solid 1px #1464f4;
   padding: 8px 20px;
+  border-radius: 0;
 }
 
 .navbar .register-button:hover span {
   background: #1e42dd;
   border-color: #1e42dd;
-  transition: color 2s ease-in-out;
 }
 
 /* Responsive styles */
@@ -79,4 +97,41 @@
     display: block;
     padding: 10px;
   }
+}
+
+.search-bar {
+  width: 0;
+}
+
+.search-bar:focus {
+  width: 250px;
+  cursor: text;
+  padding-left: 4rem;
+  padding-right: 1rem;
+  transition: ease-in-out 0.5s;
+}
+
+.search-separator {
+  width: 1px;
+  height: 24px;
+  max-height: 24px;
+  display: inline-block;
+  margin: 0 8px;
+  opacity: 0.2;
+  vertical-align: middle;
+  background: black;
+  align-items: center;
+
+  text-align: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 10;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.dropdown-menu a{
+line-height: 34px;
+margin: 4px 8px;
+border-radius: 4px;
 }

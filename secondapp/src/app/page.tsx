@@ -1,3 +1,5 @@
+"use client";
+
 import { NavBar } from "../components/NavBar";
 import { Body } from "../components/Body";
 import { Input } from "@/components/ui/input";
