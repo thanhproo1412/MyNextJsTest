@@ -1,0 +1,14 @@
+/* Navbar styles */
+.banner-swiper-pagination {
+  position: relative;
+}
+.banner-swiper-pagination div {
+  position: absolute;
+  bottom: 100px;
+  left:50%
+}
+
+.banner-dot {
+  font-size: 48px;
+  color: red;
+}

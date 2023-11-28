@@ -16,7 +16,11 @@
     "lucide-react": "^0.292.0",
     "next": "14.0.3",
     "react": "^18.2.0",
+    "react-bootstrap-carousel": "^4.1.1",
+    "react-dnd": "^16.0.1",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-slideshow-image": "^4.3.0",
     "shadcn-ui": "^0.4.1",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7"
